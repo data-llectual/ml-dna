@@ -4,7 +4,7 @@ This repo will cover whole lot machine learning problems.
 
 <B> Supervised Learning</B>
 
-ML based lead generation problem attempts to find most probable features from set of features that will result leads to prospective customer.
+ML based lead generation problem attempts to find most probable features from set of features that will result sales leads to prospective customer.
 
 following ml algos were analyzed 
 
