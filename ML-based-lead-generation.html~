@@ -12112,7 +12112,7 @@ RangeIndex: 10000 entries, 0 to 9999
 Data columns (total 11 columns):
 Phone to Name            9963 non-null object
 Phone Is Valid           9999 non-null object
-Phone Line  Type          9963 non-null object
+Phone Line Type          9963 non-null object
 Phone Is Prepaid         8601 non-null object
 Phone Is Commercial      9663 non-null object
 Address to Name          9693 non-null object
