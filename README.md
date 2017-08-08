@@ -14,10 +14,10 @@ following ml algos were analyzed :
 
 1) Decision Tree Classifier  : Using entropy (information gain) criterion.
 
-2) Decision Tree using Grid serach
+2) Decision Tree using Grid serach.
 
-3) Ensemble : Random Forest
+3) Ensemble : Random Forest.
 
-4) Logistic classifier
+4) Logistic classifier.
 
-5) Deep Neural Network with Keras and Theano
+5) Deep Neural Network with Keras and Theano.
