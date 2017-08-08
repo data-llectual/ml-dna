@@ -2,11 +2,15 @@
 
 This repo will cover whole lot machine learning problems.
 
-<B> Supervised Learning</B>
+Problem no 1: 
+Design and Develop ML based sales lead generation system.
 
-ML based lead generation problem attempts to find most probable features from set of features that will result sales leads to prospective customer.
+1) DataScience-Problem.docx => This file provides detailed description of the problem.
+2) DataScience-Problem-Data.csv => This file contains data to train and test ml models.
+3) ml-sales-lead.ipynb  => solution for the iPython notebook that covers complete solution.
+4) ML-based-lead-generation.html => solution in html format with detailed analysis of the problem.
 
-following ml algos were analyzed 
+following ml algos were analyzed : 
 
 1) Decision Tree Classifier  : Using entropy (information gain) criterion.
 
