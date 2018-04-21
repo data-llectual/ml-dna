@@ -27,3 +27,20 @@ following ml algos were analyzed :
 4) Logistic classifier.
 
 5) Deep Neural Network with Keras and Theano.
+
+Problem no : 2
+
+Note: 
+Part inspired by Jason Brownlee work from machinelearningmastery.com
+
+To learn more about different optimization algo follow : https://arxiv.org/abs/1609.04747
+
+https://moodle2.cs.huji.ac.il/nu15/pluginfile.php/316969/mod_resource/content/1/adam_pres.pdf
+
+Adam : https://arxiv.org/pdf/1412.6980v8.pdf
+
+
+source directory : /deepnet-examples/
+
+
+1) Develop multilayer perceptron models for time series prediction.
