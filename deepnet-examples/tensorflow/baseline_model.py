@@ -3,7 +3,6 @@
 """
 Created on Tue Jul 16 19:04:11 2019
 
-@author: raviraisinghani
 """
 import tensorflow as tf
 import numpy as np
@@ -31,9 +30,7 @@ def read_goog_sp500_data():
     # now sort data according to date 
     goog = goog.sort_values(['Date'],ascending=[True])
   
-    #Now we have converted the data string to datatime - sort it 
-    goog = goog.sort_values(['Date'],ascending=[True])
-  
+
     # Calculate the returns for the adjusted closed col 
     # here use pct_change() method from pandas - make sure we generate pct change only for float and int type as 
     # we do not want to generate anythig for date
@@ -49,20 +46,36 @@ def build_training_data():
     #call read_goog_sp500_data() method 
     
     pct_change_dataframe = read_goog_sp500_data()
-    x_train_data = np.array(pct_change_dataframe["SP500"])[1:]
-    y_train_data = np.array(pct_change_dataframe["Goog"])[1:]
+    #print('frame ',pct_change_dataframe["SP500"])
+    #print('frame 2 ',np.array(pct_change_dataframe["SP500"]))
+    #We should ignore only first one 
+    #Becasue of the bad data - need to ignore two recorsd
+    x_train_data = np.array(pct_change_dataframe["SP500"][2:])
+    y_train_data = np.array(pct_change_dataframe["Goog"][2:])
+    print(x_train_data)
+    print(y_train_data)
     
     return (x_train_data,y_train_data)
 
-def build_model_and_train():
+def build_model_and_train_baseline():
     #call the training data method 
     x_train_data, y_train_data = build_training_data() 
+    #intantiate linear model for google 
+    linear_model_google = linear_model.LinearRegression()
+    
+    #Note that the x data as expected by the linear_model is array of array 
+    #reshape the same use np.reshape(-1,1)
+    print(x_train_data.reshape(-1,1))
+    linear_model_google.fit(x_train_data.reshape(-1,1),y_train_data.reshape(-1,1))
     
     
+    print('Coefficient and the intercept of linear model')
+    print('Coeff', linear_model_google.coef_)
+    print('Intercept', linear_model_google.intercept_)    
 
 def main():
-    read_goog_sp500_data()
-    print('Here main')
+    #This main function will just call one method
+    build_model_and_train_baseline()
     
 
 
