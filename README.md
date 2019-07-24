@@ -28,7 +28,16 @@ following ml algos were analyzed :
 
 5) Deep Neural Network with Keras and Theano.
 
-Problem no : 2
+Problem no: 2
+
+source directory : /deepnet-examples/tensorflow
+
+1) Created a baseline linear regression model and Tensor flow model for comparision.
+2) Example in baselineModelAndTFModel.py is mini batch SGD implementation.
+3) Lot of comments in the code to drive the point.
+
+
+Problem no : 3
 
 Note: 
 Part inspired by Jason Brownlee work from machinelearningmastery.com
