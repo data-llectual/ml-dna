@@ -131,6 +131,8 @@ Hence with 1000 epochs the model will be exposed to 40000 batches
 0r 40000 updates to model
 
 
+
+This is one neuron operations
 '''    
 
 
