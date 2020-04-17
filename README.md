@@ -52,4 +52,4 @@ Adam : https://arxiv.org/pdf/1412.6980v8.pdf
 source directory : /deepnet-examples/
 
 
-1) Develop multilayer perceptron models for time series prediction.
+1) Develop multilayer perceptron models for time series prediction test:.
